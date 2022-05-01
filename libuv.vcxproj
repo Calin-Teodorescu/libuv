@@ -78,6 +78,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\include;$(ProjectDir)\src;$(ProjectDir)\src\win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -95,6 +96,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\include;$(ProjectDir)\src;$(ProjectDir)\src\win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -112,6 +114,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\include;$(ProjectDir)\src;$(ProjectDir)\src\win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -129,6 +132,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\include;$(ProjectDir)\src;$(ProjectDir)\src\win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -140,7 +144,40 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
+    <ClInclude Include="include\uv.h" />
+    <ClInclude Include="include\uv\aix.h" />
+    <ClInclude Include="include\uv\bsd.h" />
+    <ClInclude Include="include\uv\darwin.h" />
+    <ClInclude Include="include\uv\errno.h" />
+    <ClInclude Include="include\uv\linux.h" />
+    <ClInclude Include="include\uv\os390.h" />
+    <ClInclude Include="include\uv\posix.h" />
+    <ClInclude Include="include\uv\sunos.h" />
+    <ClInclude Include="include\uv\threadpool.h" />
+    <ClInclude Include="include\uv\tree.h" />
+    <ClInclude Include="include\uv\unix.h" />
+    <ClInclude Include="include\uv\version.h" />
+    <ClInclude Include="include\uv\win.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="src\heap-inl.h" />
+    <ClInclude Include="src\idna.h" />
+    <ClInclude Include="src\queue.h" />
+    <ClInclude Include="src\strscpy.h" />
+    <ClInclude Include="src\uv-common.h" />
+    <ClInclude Include="src\win\atomicops-inl.h" />
+    <ClInclude Include="src\win\fs-fd-hash-inl.h" />
+    <ClInclude Include="src\win\handle-inl.h" />
+    <ClInclude Include="src\win\internal.h" />
+    <ClInclude Include="src\win\req-inl.h" />
+    <ClInclude Include="src\win\stream-inl.h" />
+    <ClInclude Include="src\win\winapi.h" />
+    <ClInclude Include="src\win\winsock.h" />
+    <ClInclude Include="test\benchmark-list.h" />
+    <ClInclude Include="test\runner-unix.h" />
+    <ClInclude Include="test\runner-win.h" />
+    <ClInclude Include="test\runner.h" />
+    <ClInclude Include="test\task.h" />
+    <ClInclude Include="test\test-list.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="libuv.cpp" />
@@ -150,6 +187,253 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="src\fs-poll.c" />
+    <ClCompile Include="src\idna.c" />
+    <ClCompile Include="src\inet.c" />
+    <ClCompile Include="src\loop-watcher.c" />
+    <ClCompile Include="src\random.c" />
+    <ClCompile Include="src\strscpy.c" />
+    <ClCompile Include="src\threadpool.c" />
+    <ClCompile Include="src\timer.c" />
+    <ClCompile Include="src\uv-common.c" />
+    <ClCompile Include="src\uv-data-getter-setters.c" />
+    <ClCompile Include="src\version.c" />
+    <ClCompile Include="src\win\async.c" />
+    <ClCompile Include="src\win\core.c" />
+    <ClCompile Include="src\win\detect-wakeup.c" />
+    <ClCompile Include="src\win\dl.c" />
+    <ClCompile Include="src\win\error.c" />
+    <ClCompile Include="src\win\fs-event.c" />
+    <ClCompile Include="src\win\fs.c" />
+    <ClCompile Include="src\win\getaddrinfo.c" />
+    <ClCompile Include="src\win\getnameinfo.c" />
+    <ClCompile Include="src\win\handle.c" />
+    <ClCompile Include="src\win\pipe.c" />
+    <ClCompile Include="src\win\poll.c" />
+    <ClCompile Include="src\win\process-stdio.c" />
+    <ClCompile Include="src\win\process.c" />
+    <ClCompile Include="src\win\signal.c" />
+    <ClCompile Include="src\win\stream.c" />
+    <ClCompile Include="src\win\tcp.c" />
+    <ClCompile Include="src\win\thread.c" />
+    <ClCompile Include="src\win\tty.c" />
+    <ClCompile Include="src\win\udp.c" />
+    <ClCompile Include="src\win\util.c" />
+    <ClCompile Include="src\win\winapi.c" />
+    <ClCompile Include="src\win\winsock.c" />
+    <ClCompile Include="test\benchmark-async-pummel.c" />
+    <ClCompile Include="test\benchmark-async.c" />
+    <ClCompile Include="test\benchmark-fs-stat.c" />
+    <ClCompile Include="test\benchmark-getaddrinfo.c" />
+    <ClCompile Include="test\benchmark-loop-count.c" />
+    <ClCompile Include="test\benchmark-million-async.c" />
+    <ClCompile Include="test\benchmark-million-timers.c" />
+    <ClCompile Include="test\benchmark-multi-accept.c" />
+    <ClCompile Include="test\benchmark-ping-pongs.c" />
+    <ClCompile Include="test\benchmark-ping-udp.c" />
+    <ClCompile Include="test\benchmark-pound.c" />
+    <ClCompile Include="test\benchmark-pump.c" />
+    <ClCompile Include="test\benchmark-queue-work.c" />
+    <ClCompile Include="test\benchmark-sizes.c" />
+    <ClCompile Include="test\benchmark-spawn.c" />
+    <ClCompile Include="test\benchmark-tcp-write-batch.c" />
+    <ClCompile Include="test\benchmark-thread.c" />
+    <ClCompile Include="test\benchmark-udp-pummel.c" />
+    <ClCompile Include="test\blackhole-server.c" />
+    <ClCompile Include="test\echo-server.c" />
+    <ClCompile Include="test\run-benchmarks.c" />
+    <ClCompile Include="test\run-tests.c" />
+    <ClCompile Include="test\runner-unix.c" />
+    <ClCompile Include="test\runner-win.c" />
+    <ClCompile Include="test\runner.c" />
+    <ClCompile Include="test\test-active.c" />
+    <ClCompile Include="test\test-async-multi.c" />
+    <ClCompile Include="test\test-async-null-cb.c" />
+    <ClCompile Include="test\test-async.c" />
+    <ClCompile Include="test\test-barrier.c" />
+    <ClCompile Include="test\test-buf.c" />
+    <ClCompile Include="test\test-callback-order.c" />
+    <ClCompile Include="test\test-callback-stack.c" />
+    <ClCompile Include="test\test-close-fd.c" />
+    <ClCompile Include="test\test-close-order.c" />
+    <ClCompile Include="test\test-condvar.c" />
+    <ClCompile Include="test\test-connect-unspecified.c" />
+    <ClCompile Include="test\test-connection-fail.c" />
+    <ClCompile Include="test\test-cwd-and-chdir.c" />
+    <ClCompile Include="test\test-default-loop-close.c" />
+    <ClCompile Include="test\test-delayed-accept.c" />
+    <ClCompile Include="test\test-dlerror.c" />
+    <ClCompile Include="test\test-eintr-handling.c" />
+    <ClCompile Include="test\test-embed.c" />
+    <ClCompile Include="test\test-emfile.c" />
+    <ClCompile Include="test\test-env-vars.c" />
+    <ClCompile Include="test\test-error.c" />
+    <ClCompile Include="test\test-fail-always.c" />
+    <ClCompile Include="test\test-fork.c" />
+    <ClCompile Include="test\test-fs-copyfile.c" />
+    <ClCompile Include="test\test-fs-event.c" />
+    <ClCompile Include="test\test-fs-fd-hash.c" />
+    <ClCompile Include="test\test-fs-open-flags.c" />
+    <ClCompile Include="test\test-fs-poll.c" />
+    <ClCompile Include="test\test-fs-readdir.c" />
+    <ClCompile Include="test\test-fs.c" />
+    <ClCompile Include="test\test-get-currentexe.c" />
+    <ClCompile Include="test\test-get-loadavg.c" />
+    <ClCompile Include="test\test-get-memory.c" />
+    <ClCompile Include="test\test-get-passwd.c" />
+    <ClCompile Include="test\test-getaddrinfo.c" />
+    <ClCompile Include="test\test-gethostname.c" />
+    <ClCompile Include="test\test-getnameinfo.c" />
+    <ClCompile Include="test\test-getsockname.c" />
+    <ClCompile Include="test\test-getters-setters.c" />
+    <ClCompile Include="test\test-gettimeofday.c" />
+    <ClCompile Include="test\test-handle-fileno.c" />
+    <ClCompile Include="test\test-homedir.c" />
+    <ClCompile Include="test\test-hrtime.c" />
+    <ClCompile Include="test\test-idle.c" />
+    <ClCompile Include="test\test-idna.c" />
+    <ClCompile Include="test\test-ip-name.c" />
+    <ClCompile Include="test\test-ip4-addr.c" />
+    <ClCompile Include="test\test-ip6-addr.c" />
+    <ClCompile Include="test\test-ipc-heavy-traffic-deadlock-bug.c" />
+    <ClCompile Include="test\test-ipc-send-recv.c" />
+    <ClCompile Include="test\test-ipc.c" />
+    <ClCompile Include="test\test-loop-alive.c" />
+    <ClCompile Include="test\test-loop-close.c" />
+    <ClCompile Include="test\test-loop-configure.c" />
+    <ClCompile Include="test\test-loop-handles.c" />
+    <ClCompile Include="test\test-loop-stop.c" />
+    <ClCompile Include="test\test-loop-time.c" />
+    <ClCompile Include="test\test-metrics.c" />
+    <ClCompile Include="test\test-multiple-listen.c" />
+    <ClCompile Include="test\test-mutexes.c" />
+    <ClCompile Include="test\test-not-readable-nor-writable-on-read-error.c" />
+    <ClCompile Include="test\test-not-writable-after-shutdown.c" />
+    <ClCompile Include="test\test-osx-select.c" />
+    <ClCompile Include="test\test-pass-always.c" />
+    <ClCompile Include="test\test-ping-pong.c" />
+    <ClCompile Include="test\test-pipe-bind-error.c" />
+    <ClCompile Include="test\test-pipe-close-stdout-read-stdin.c" />
+    <ClCompile Include="test\test-pipe-connect-error.c" />
+    <ClCompile Include="test\test-pipe-connect-multiple.c" />
+    <ClCompile Include="test\test-pipe-connect-prepare.c" />
+    <ClCompile Include="test\test-pipe-getsockname.c" />
+    <ClCompile Include="test\test-pipe-pending-instances.c" />
+    <ClCompile Include="test\test-pipe-sendmsg.c" />
+    <ClCompile Include="test\test-pipe-server-close.c" />
+    <ClCompile Include="test\test-pipe-set-fchmod.c" />
+    <ClCompile Include="test\test-pipe-set-non-blocking.c" />
+    <ClCompile Include="test\test-platform-output.c" />
+    <ClCompile Include="test\test-poll-close-doesnt-corrupt-stack.c" />
+    <ClCompile Include="test\test-poll-close.c" />
+    <ClCompile Include="test\test-poll-closesocket.c" />
+    <ClCompile Include="test\test-poll-multiple-handles.c" />
+    <ClCompile Include="test\test-poll-oob.c" />
+    <ClCompile Include="test\test-poll.c" />
+    <ClCompile Include="test\test-process-priority.c" />
+    <ClCompile Include="test\test-process-title-threadsafe.c" />
+    <ClCompile Include="test\test-process-title.c" />
+    <ClCompile Include="test\test-queue-foreach-delete.c" />
+    <ClCompile Include="test\test-random.c" />
+    <ClCompile Include="test\test-readable-on-eof.c" />
+    <ClCompile Include="test\test-ref.c" />
+    <ClCompile Include="test\test-run-nowait.c" />
+    <ClCompile Include="test\test-run-once.c" />
+    <ClCompile Include="test\test-semaphore.c" />
+    <ClCompile Include="test\test-shutdown-close.c" />
+    <ClCompile Include="test\test-shutdown-eof.c" />
+    <ClCompile Include="test\test-shutdown-simultaneous.c" />
+    <ClCompile Include="test\test-shutdown-twice.c" />
+    <ClCompile Include="test\test-signal-multiple-loops.c" />
+    <ClCompile Include="test\test-signal-pending-on-close.c" />
+    <ClCompile Include="test\test-signal.c" />
+    <ClCompile Include="test\test-socket-buffer-size.c" />
+    <ClCompile Include="test\test-spawn.c" />
+    <ClCompile Include="test\test-stdio-over-pipes.c" />
+    <ClCompile Include="test\test-strscpy.c" />
+    <ClCompile Include="test\test-tcp-alloc-cb-fail.c" />
+    <ClCompile Include="test\test-tcp-bind-error.c" />
+    <ClCompile Include="test\test-tcp-bind6-error.c" />
+    <ClCompile Include="test\test-tcp-close-accept.c" />
+    <ClCompile Include="test\test-tcp-close-reset.c" />
+    <ClCompile Include="test\test-tcp-close-while-connecting.c" />
+    <ClCompile Include="test\test-tcp-close.c" />
+    <ClCompile Include="test\test-tcp-connect-error-after-write.c" />
+    <ClCompile Include="test\test-tcp-connect-error.c" />
+    <ClCompile Include="test\test-tcp-connect-timeout.c" />
+    <ClCompile Include="test\test-tcp-connect6-error.c" />
+    <ClCompile Include="test\test-tcp-create-socket-early.c" />
+    <ClCompile Include="test\test-tcp-flags.c" />
+    <ClCompile Include="test\test-tcp-oob.c" />
+    <ClCompile Include="test\test-tcp-open.c" />
+    <ClCompile Include="test\test-tcp-read-stop-start.c" />
+    <ClCompile Include="test\test-tcp-read-stop.c" />
+    <ClCompile Include="test\test-tcp-shutdown-after-write.c" />
+    <ClCompile Include="test\test-tcp-try-write-error.c" />
+    <ClCompile Include="test\test-tcp-try-write.c" />
+    <ClCompile Include="test\test-tcp-unexpected-read.c" />
+    <ClCompile Include="test\test-tcp-write-after-connect.c" />
+    <ClCompile Include="test\test-tcp-write-fail.c" />
+    <ClCompile Include="test\test-tcp-write-queue-order.c" />
+    <ClCompile Include="test\test-tcp-write-to-half-open-connection.c" />
+    <ClCompile Include="test\test-tcp-writealot.c" />
+    <ClCompile Include="test\test-test-macros.c" />
+    <ClCompile Include="test\test-thread-affinity.c" />
+    <ClCompile Include="test\test-thread-equal.c" />
+    <ClCompile Include="test\test-thread.c" />
+    <ClCompile Include="test\test-threadpool-cancel.c" />
+    <ClCompile Include="test\test-threadpool.c" />
+    <ClCompile Include="test\test-timer-again.c" />
+    <ClCompile Include="test\test-timer-from-check.c" />
+    <ClCompile Include="test\test-timer.c" />
+    <ClCompile Include="test\test-tmpdir.c" />
+    <ClCompile Include="test\test-tty-duplicate-key.c" />
+    <ClCompile Include="test\test-tty-escape-sequence-processing.c" />
+    <ClCompile Include="test\test-tty.c" />
+    <ClCompile Include="test\test-udp-alloc-cb-fail.c" />
+    <ClCompile Include="test\test-udp-bind.c" />
+    <ClCompile Include="test\test-udp-connect.c" />
+    <ClCompile Include="test\test-udp-connect6.c" />
+    <ClCompile Include="test\test-udp-create-socket-early.c" />
+    <ClCompile Include="test\test-udp-dgram-too-big.c" />
+    <ClCompile Include="test\test-udp-ipv6.c" />
+    <ClCompile Include="test\test-udp-mmsg.c" />
+    <ClCompile Include="test\test-udp-multicast-interface.c" />
+    <ClCompile Include="test\test-udp-multicast-interface6.c" />
+    <ClCompile Include="test\test-udp-multicast-join.c" />
+    <ClCompile Include="test\test-udp-multicast-join6.c" />
+    <ClCompile Include="test\test-udp-multicast-ttl.c" />
+    <ClCompile Include="test\test-udp-open.c" />
+    <ClCompile Include="test\test-udp-options.c" />
+    <ClCompile Include="test\test-udp-send-and-recv.c" />
+    <ClCompile Include="test\test-udp-send-hang-loop.c" />
+    <ClCompile Include="test\test-udp-send-immediate.c" />
+    <ClCompile Include="test\test-udp-send-unreachable.c" />
+    <ClCompile Include="test\test-udp-sendmmsg-error.c" />
+    <ClCompile Include="test\test-udp-try-send.c" />
+    <ClCompile Include="test\test-uname.c" />
+    <ClCompile Include="test\test-walk-handles.c" />
+    <ClCompile Include="test\test-watcher-cross-stop.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".readthedocs.yaml" />
+    <None Include="autogen.sh" />
+    <None Include="configure.ac" />
+    <None Include="CONTRIBUTING.md" />
+    <None Include="LINKS.md" />
+    <None Include="MAINTAINERS.md" />
+    <None Include="Makefile.am" />
+    <None Include="README.md" />
+    <None Include="SUPPORTED_PLATFORMS.md" />
+    <None Include="test\fixtures\empty_file" />
+    <None Include="test\fixtures\load_error.node" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+    <Text Include="test\fixtures\lorem_ipsum.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="uv_win_longpath.manifest" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

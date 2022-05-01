@@ -1,33 +1,876 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
+    <Filter Include="%2a%2a Header Files">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
+    <Filter Include="%2a%2a Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="%2a Info">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{4322581c-9714-45c1-9876-8b71f4cef612}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test\%2a%2a Header Files">
+      <UniqueIdentifier>{811ebb4e-e563-4c59-b138-e88dda95639a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%2a%2a%2a VS Wrapper">
+      <UniqueIdentifier>{89ddc054-7312-45e7-bc02-5dee98d95a16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%2a%2a%2a VS Wrapper\Header Files">
+      <UniqueIdentifier>{c38b9782-9792-42c4-820b-46ea805298e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test\fixtures">
+      <UniqueIdentifier>{7fb7df26-a07e-4ddc-85d3-843114d98b93}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\uv.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\uv\aix.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\uv\bsd.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\uv\darwin.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\uv\errno.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\uv\linux.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\uv\os390.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\uv\posix.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\uv\sunos.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\uv\threadpool.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\uv\tree.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\uv\unix.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\uv\version.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\uv\win.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\heap-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\idna.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\queue.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\strscpy.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\uv-common.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\win\atomicops-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\win\fs-fd-hash-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\win\handle-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\win\internal.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\win\req-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\win\stream-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\win\winapi.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\win\winsock.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="framework.h">
-      <Filter>Header Files</Filter>
+      <Filter>%2a%2a%2a VS Wrapper\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="pch.h">
-      <Filter>Header Files</Filter>
+      <Filter>%2a%2a%2a VS Wrapper\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test\benchmark-list.h">
+      <Filter>Test\%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test\runner.h">
+      <Filter>Test\%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test\runner-unix.h">
+      <Filter>Test\%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test\runner-win.h">
+      <Filter>Test\%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test\task.h">
+      <Filter>Test\%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test\test-list.h">
+      <Filter>Test\%2a%2a Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\fs-poll.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\idna.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inet.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\loop-watcher.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\random.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strscpy.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\threadpool.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timer.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\uv-common.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\uv-data-getter-setters.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\version.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win\async.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win\core.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win\detect-wakeup.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win\dl.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win\error.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win\fs.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win\fs-event.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win\getaddrinfo.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win\getnameinfo.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win\handle.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win\pipe.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win\poll.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win\process.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win\process-stdio.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win\signal.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win\stream.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win\tcp.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win\thread.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win\tty.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win\udp.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win\util.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win\winapi.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win\winsock.c">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="libuv.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>%2a%2a%2a VS Wrapper</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>%2a%2a%2a VS Wrapper</Filter>
     </ClCompile>
+    <ClCompile Include="test\benchmark-async.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\benchmark-async-pummel.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\benchmark-fs-stat.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\benchmark-getaddrinfo.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\benchmark-loop-count.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\benchmark-million-async.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\benchmark-million-timers.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\benchmark-multi-accept.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\benchmark-ping-pongs.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\benchmark-ping-udp.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\benchmark-pound.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\benchmark-pump.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\benchmark-queue-work.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\benchmark-sizes.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\benchmark-spawn.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\benchmark-tcp-write-batch.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\benchmark-thread.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\benchmark-udp-pummel.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\blackhole-server.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\echo-server.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\run-benchmarks.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\runner.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\runner-unix.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\runner-win.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\run-tests.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-active.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-async.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-async-multi.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-async-null-cb.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-barrier.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-buf.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-callback-order.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-callback-stack.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-close-fd.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-close-order.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-condvar.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-connection-fail.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-connect-unspecified.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-cwd-and-chdir.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-default-loop-close.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-delayed-accept.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-dlerror.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-eintr-handling.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-embed.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-emfile.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-env-vars.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-error.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-fail-always.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-fork.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-fs.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-fs-copyfile.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-fs-event.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-fs-fd-hash.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-fs-open-flags.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-fs-poll.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-fs-readdir.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-getaddrinfo.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-get-currentexe.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-gethostname.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-get-loadavg.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-get-memory.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-getnameinfo.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-get-passwd.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-getsockname.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-getters-setters.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-gettimeofday.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-handle-fileno.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-homedir.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-hrtime.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-idle.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-idna.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-ip4-addr.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-ip6-addr.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-ipc.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-ipc-heavy-traffic-deadlock-bug.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-ipc-send-recv.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-ip-name.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-loop-alive.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-loop-close.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-loop-configure.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-loop-handles.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-loop-stop.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-loop-time.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-metrics.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-multiple-listen.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-mutexes.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-not-readable-nor-writable-on-read-error.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-not-writable-after-shutdown.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-osx-select.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-pass-always.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-ping-pong.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-pipe-bind-error.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-pipe-close-stdout-read-stdin.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-pipe-connect-error.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-pipe-connect-multiple.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-pipe-connect-prepare.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-pipe-getsockname.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-pipe-pending-instances.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-pipe-sendmsg.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-pipe-server-close.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-pipe-set-fchmod.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-pipe-set-non-blocking.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-platform-output.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-poll.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-poll-close.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-poll-close-doesnt-corrupt-stack.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-poll-closesocket.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-poll-multiple-handles.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-poll-oob.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-process-priority.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-process-title.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-process-title-threadsafe.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-queue-foreach-delete.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-random.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-readable-on-eof.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-ref.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-run-nowait.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-run-once.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-semaphore.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-shutdown-close.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-shutdown-eof.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-shutdown-simultaneous.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-shutdown-twice.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-signal.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-signal-multiple-loops.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-signal-pending-on-close.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-socket-buffer-size.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-spawn.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-stdio-over-pipes.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-strscpy.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-alloc-cb-fail.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-bind6-error.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-bind-error.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-close.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-close-accept.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-close-reset.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-close-while-connecting.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-connect6-error.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-connect-error.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-connect-error-after-write.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-connect-timeout.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-create-socket-early.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-flags.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-oob.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-open.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-read-stop.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-read-stop-start.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-shutdown-after-write.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-try-write.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-try-write-error.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-unexpected-read.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-write-after-connect.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-writealot.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-write-fail.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-write-queue-order.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tcp-write-to-half-open-connection.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-test-macros.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-thread.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-thread-affinity.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-thread-equal.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-threadpool.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-threadpool-cancel.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-timer.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-timer-again.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-timer-from-check.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tmpdir.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tty.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tty-duplicate-key.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-tty-escape-sequence-processing.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-udp-alloc-cb-fail.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-udp-bind.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-udp-connect.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-udp-connect6.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-udp-create-socket-early.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-udp-dgram-too-big.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-udp-ipv6.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-udp-mmsg.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-udp-multicast-interface.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-udp-multicast-interface6.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-udp-multicast-join.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-udp-multicast-join6.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-udp-multicast-ttl.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-udp-open.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-udp-options.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-udp-send-and-recv.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-udp-send-hang-loop.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-udp-send-immediate.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-udp-sendmmsg-error.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-udp-send-unreachable.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-udp-try-send.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-uname.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-walk-handles.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test-watcher-cross-stop.c">
+      <Filter>Test</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".readthedocs.yaml">
+      <Filter>%2a Info</Filter>
+    </None>
+    <None Include="autogen.sh">
+      <Filter>%2a Info</Filter>
+    </None>
+    <None Include="configure.ac">
+      <Filter>%2a Info</Filter>
+    </None>
+    <None Include="CONTRIBUTING.md">
+      <Filter>%2a Info</Filter>
+    </None>
+    <None Include="LINKS.md">
+      <Filter>%2a Info</Filter>
+    </None>
+    <None Include="MAINTAINERS.md">
+      <Filter>%2a Info</Filter>
+    </None>
+    <None Include="Makefile.am">
+      <Filter>%2a Info</Filter>
+    </None>
+    <None Include="README.md">
+      <Filter>%2a Info</Filter>
+    </None>
+    <None Include="SUPPORTED_PLATFORMS.md">
+      <Filter>%2a Info</Filter>
+    </None>
+    <None Include="test\fixtures\empty_file">
+      <Filter>Test\fixtures</Filter>
+    </None>
+    <None Include="test\fixtures\load_error.node">
+      <Filter>Test\fixtures</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt">
+      <Filter>%2a Info</Filter>
+    </Text>
+    <Text Include="test\fixtures\lorem_ipsum.txt">
+      <Filter>Test\fixtures</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="uv_win_longpath.manifest">
+      <Filter>%2a Info</Filter>
+    </Manifest>
   </ItemGroup>
 </Project>
